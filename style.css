@@ -1,0 +1,105 @@
+#bloc_page
+{
+    width: 1100px;
+    margin: auto;
+}
+#logo img
+{
+    width: 50px;
+    height: 60px;
+}
+@font-face {
+    font-family:raleway ;
+    src: url('Raleway-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+header h1
+{
+    font-size: 1.5em;
+    font-weight: normal;
+    padding-top: 20px;
+    margin-top: 10px;   
+}
+header h2
+{
+    font-size: 1.0em;
+    font-weight: normal; 
+    margin-bottom: 10px; 
+}
+nav ul
+{
+    list-style-type: none; /* pour enlever le puce du menu */
+    display: flex;
+    text-align: right; /* pour que le menu de navigation soit à droite */
+}
+nav li
+{
+    margin-right: 1,5px;
+    padding: 10px;
+    padding-bottom: 90px;
+}   
+nav a
+{
+    font-size: 1.0em;
+    color: #181818;
+    text-decoration: none;
+}
+nav a:hover
+{
+    color: #0065FC; /* pour activer le survol */
+    border-bottom: 3px solid #0065FC;
+}
+.premiere
+{
+    list-style-type: none; /* pour enlever les puces du menu */
+    display: flex;
+    text-align: right;
+    text-decoration: none;  
+    font-size: 1.0em;
+    margin-left: 150px;
+    padding-bottom: 10px;
+}
+
+.deuxieme
+{
+    list-style-type: none; /* pour enlever les puces du menu */
+    display: flex;
+    text-align: center; /* pour que le menu de navigation soit à droite */
+}
+.deuxieme li
+{
+    margin-right: 35px;
+    padding-right: 35px; /* pour se déplacer vers la droite */
+}
+.deuxieme a
+{
+    font-size: 1.0em;
+    color: #181818;
+    text-decoration: none;
+}
+.deuxieme a:hover
+{
+    color: #0065FC; /* pour activer le survol */
+    border-bottom: 3px solid #0065FC;
+}
+.filtre
+{
+    display:flex;
+    text-align: left;
+}
+.ville
+{
+    padding-top: 2%;
+}
