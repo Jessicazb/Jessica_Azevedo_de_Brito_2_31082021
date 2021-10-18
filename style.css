@@ -1,7 +1,7 @@
 #bloc_page
 {
-    width: 992px;
-    margin: auto;
+    width: 100%;
+    margin: 50px;
 }
 #logo img
 {
@@ -37,6 +37,7 @@ nav
     list-style-type: none; /* pour enlever le puce du menu */
     display: flex;
     justify-content: flex-end;
+    margin-right: 50px;
 }
 nav a
 {
@@ -116,7 +117,7 @@ nav a:hover
     padding-top: 7px;
     padding-left: 7px;
     background-color: #0065FC;
-    width: 9%;
+    width: 8%;
     color: white;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
@@ -156,20 +157,20 @@ nav a:hover
 .filtres-recherche
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-    margin-right: 200px;
     margin-top: 40px;
+    margin-right: 350px;
 }
 .filtre
 {
     padding-top: 10px;
     font-size: 85%;
+    padding-right: 5px;
 }
 .bloc-economique
 {
   display: flex;
-  padding-left: 20px;
 }
 .economique 
 {
@@ -207,8 +208,6 @@ nav a:hover
 .bloc-familial
 {
   display: flex;
-  position: relative;
-  right: 20px;
 }
 .familial 
 {
@@ -246,8 +245,6 @@ nav a:hover
 .bloc-romantique
 {
   display: flex;
-  position:relative;
-  right: 40px;
 }
 .romantique
 {
@@ -281,11 +278,6 @@ nav a:hover
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-}
-.bloc-animaux
-{
-    position:relative;
-    right: 60px;
 }
 .animaux 
 {
@@ -567,12 +559,12 @@ nav a:hover
 .bordure-images1
 {
     border: none;
-    width: 30%;
+    width: 28%;
     height: 180px;
     border-radius: 15px;
     background-color: white;
     padding-top: 5px;
-    margin-left: 10px;
+    margin-left: 25px;
     margin-right: 10px;
     margin-bottom: 15px;
     margin-top: 20px;
@@ -585,12 +577,12 @@ nav a:hover
 aside
 {
     border: none;
-    width: 32%;
     height: 580px;
+    width: 28%;
     border-radius: 10px;
     background-color: #f2f2f2;
     position: relative;
-    left: 670px;
+    left: 830px;
     bottom: 580px;
     margin-left: 4px;
 }
@@ -614,7 +606,7 @@ aside
     border: none;
     border-radius: 10px;
     background-color: white;
-    width: 80%;
+    width: 75%;
     height: 135px;
     border-radius: 15px;
     margin-left: 25px;
@@ -704,7 +696,7 @@ aside
 {
     border: none;
     border-radius: 15px;
-    width: 23%;
+    width: 20%;
     height: 370px;
     box-shadow: 1.1px 1.1px 10px 1.1px lightgray;
 }
@@ -712,53 +704,52 @@ aside
 {
     border: none;
     border-radius: 15px;
-    width: 23%;
+    width: 20%;
     height: 190px;
-    box-shadow: 1.1px 1.1px 10px 1.1px lightgray;
     position: relative;
-    left: 2px;
-    
+    left: 60px;
+    box-shadow: 1.1px 1.1px 10px 1.1px lightgray;   
 }
 .bordure-frioul
 {
     border: none;
     border-radius: 15px;
-    width: 23%;
+    width: 20%;
     height: 145px;
     position: relative;
     top: 225px;
-    right: 253px;
+    right: 190px;
     box-shadow: 1.1px 1.1px 10px 1.1px lightgray;
 }
 .bordure-calanques
 {
     border: none;
     border-radius: 15px;
-    width: 23%;
+    width: 20%;
     height: 370px;
     position: relative;
-    right: 255px;
+    right: 130px;
     box-shadow: 1.1px 1.1px 10px 1.1px lightgray;
 }
 .bordure-notre-dame
 {
     border: none;
     border-radius: 15px;
-    width: 23%;
+    width: 20%;
     height: 170px;
     position: relative;
-    left: 760px;
-    bottom: 370px;
+    right: 65px;
     box-shadow: 1.1px 1.1px 10px 1.1px lightgray;
 }
 .bordure-longchamp
 {
     border: none;
     border-radius: 10px;
-    width: 23%;
+    width: 20%;
     height: 170px;
     position: relative;
     bottom: 170px;
+    left: 940px;
     box-shadow: 1.1px 1.1px 10px 1.1px lightgray;
     
 }
@@ -840,7 +831,7 @@ footer
 {
     border: none;
     background-color:#f2f2f2;
-    width: auto;
+    margin-right: 50px;
 }
 footer
 {
@@ -889,240 +880,262 @@ footer a:hover
 {
     color: #0065FC;
 }
-@media screen and (max-width:768px)
+@media screen and (min-width:768px) and (max-width:992px)
 {
     #bloc_page
     {
-        width: 100%; 
-        margin: auto;
-    }
-    #logo
-    {
-        width: 170%;
-        padding-bottom: 30px;
-    }
-     nav 
-    {
-        display: flex;
-        justify-content:flex-start;
-        position: relative;
-        right: 30px;
-        margin-top: 20px;
-        margin-left: 40px;
-    }
-     nav a:hover
-    {
-      color: #0065FC; /* pour activer le survol */
-      text-decoration:underline;
-    }
-    .nav-sinscrire
-    {
-        position: relative;
-        bottom: 42px;
-        right: 30px;
-    }
-    .nav-activites
-    {
-        position: relative;
-        left: 25px;
-    }
-    #title_principal
-    {
-        margin-right: 270px;
-    }
-    .filtre
-    {
-        padding-bottom: 40px;
-    }
-    .filtres-recherche
-    {
-    flex-direction: column;
-
-    }
-    .icons-localisation
-    {
-     width: 5%;
-     padding-left: 10px;
-    }
-    .bouton-rechercher
-    {
-        display: none;
-    }
-    .icons-recherche 
-    {
-     width: 5%;
-     height: 23px;
-     padding-top: 10px;
-     padding-left: 10px;
-     margin-left: 1px;
-     cursor: pointer;
-     display: block;
-    }
-    .filtres-recherche
-    {
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .bloc-economique
-    {
-        position: relative;
-        right: 20px;   
-    }
-    .bloc-familial
-    {
-        padding-left: 175px;
-        position: relative;
-        bottom: 45px;
-    }
-    .bloc-romantique
-    {
-        position: relative;
-        bottom: 30px;
-        padding-left: 40px;
+      width: 100%;
+      margin: auto;
     }
     .bloc-animaux
     {
-        position: relative;
-        bottom: 20px;
-        padding-left: 60px;
+        width: 100%;
     }
-    .ligne
+    .aside 
     {
+        margin-right: 50px;
+    }
+
+
+
+
+}
+
+    @media screen and (max-width:768px)
+    {
+        #bloc_page
+        {
+            width: 100%; 
+            margin: 50px;
+        }
+        #logo
+        {
+            width: 170%;
+            padding-bottom: 30px;
+        }
+         nav 
+        {
+            display: flex;
+            justify-content:flex-start;
+            position: relative;
+            right: 30px;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+         nav a:hover
+        {
+          color: #0065FC; /* pour activer le survol */
+          text-decoration:underline;
+        }
+        .nav-sinscrire
+        {
+            position: relative;
+            bottom: 42px;
+            right: 30px;
+        }
+        .nav-activites
+        {
+            position: relative;
+            left: 25px;
+        }
+        #title_principal
+        {
+            margin-right: 270px;
+        }
+        .filtre
+        {
+            padding-bottom: 40px;
+        }
+        .filtres-recherche
+        {
         flex-direction: column;
-    }
-    .bloc1
-    {
-        position: relative;
-        top: 600px;
-        left: 0px;
-        width: 60%;
-        height: 1430px;
-        background-color: white;
-    }
-    .bordure-images1
-    {
-        width: 80%;
-        padding-left: 2px;
-        margin-left: 25px;
-    }
-    .afficher-plus
-    {
-        padding-right: 70px;
-    }
-    aside 
-    {
-        position: relative;
-        left: 2px;
-        width: 60%;
-        bottom: 1430px;
-    }
-    .bloc-activites
-    {
-      position: relative;
-      top: 30px;
-    }
-    .activites
-    {
-        flex-direction: column;
-    }
-    .title-activites
-    {
-        margin-left: 20px;
-    }
-    .bordure-vieux-port
-    {
-        margin-left: 20px;
-        width: 50%;
-        height: 160px;
-    }
-    .image-vieux-port
-    {
-        height: 120px;
-    }
-    .image-pomegues
-    {
-        height: 120px;
-    }
-    .bordure-pomegues
-    {
-      margin-left: 20px;
-      width: 50%;
-      height: 160px;
-      margin-top: 30px;
-    }
-    .bordure-frioul
-    {
-      margin-left: 20px;
-      position:static;
-      bottom: 500px;
-      margin-top: 30px;
-      width: 50%;
-      height: 160px;
-    }
-    .image-frioul
-    {
-        height: 120px;
-    }
-    .bordure-calanques
-    {
-       margin-left: 275px;
-       margin-top: 30px;
-       width: 50%;
-       height: 160px;
-    }
-    .image-calanques
-    {
-        height: 120px;
-    }
-    .bordure-notre-dame
-    {
-      margin-left: 20px;
-      position: static;
-      right: 500px;
-      margin-top: 30px;
-      width: 50%;
-      height: 160px;
-    }
-    .image-notre-dame
-    {
-        height: 120px;
-    }
-    .bordure-longchamp
-    {
-      margin-left: 20px;
-      position: relative;
-      top: 5px;
-      margin-top: 30px;
-      width: 50%;
-      height: 160px;
-    }
-    .image-longchamp
-    {
-        height: 120px;
-    }
-
-    footer 
-    {
-      position: relative;
-      top:750px;
-      flex-direction: column;
-      width: 60%;
-    }
-    .nos-hebergements
-    {
-      position: relative;
-      right: 130px;
-    }
-    .assistance
-    {
-        position: relative;
-        right: 130px;
-    }
-
-   
-
-
     
-}  
+        }
+        .icons-localisation
+        {
+         width: 5%;
+         padding-left: 10px;
+        }
+        .bouton-rechercher
+        {
+            display: none;
+        }
+        .icons-recherche 
+        {
+         width: 5%;
+         height: 23px;
+         padding-top: 10px;
+         padding-left: 10px;
+         margin-left: 1px;
+         cursor: pointer;
+         display: block;
+        }
+        .filtres-recherche
+        {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .bloc-familial
+        {
+            padding-left: 175px;
+            position: relative;
+            bottom: 45px;
+        }
+        .bloc-romantique
+        {
+            position: relative;
+            bottom: 30px;
+        }
+        .bloc-animaux
+        {
+            position: relative;
+            bottom: 20px;
+            width: 180px;
+        }
+        .ligne
+        {
+            flex-direction: column;
+        }
+        .bloc1
+        {
+            position: relative;
+            top: 600px;
+            left: 0px;
+            width: 60%;
+            height: 1430px;
+            background-color: white;
+        }
+        .bordure-images1
+        {
+            width: 90%;
+            padding-left: 2px;
+            margin-left: 25px;
+        }
+        .afficher-plus
+        {
+            padding-right: 70px;
+        }
+        aside 
+        {
+            position: relative;
+            left: 2px;
+            width: 65%;
+            bottom: 1430px;
+        }
+        .bordure-images2
+        {
+            width: 70%;
+            margin-left: 50px;
+        }
+        .bloc-activites
+        {
+          position: relative;
+          top: 30px;
+        }
+        .activites
+        {
+            flex-direction: column;
+        }
+        .title-activites
+        {
+            margin-left: 20px;
+        }
+        .bordure-vieux-port
+        {
+            margin-left: 20px;
+            width: 55%;
+            height: 160px;
+        }
+        .image-vieux-port
+        {
+            height: 120px;
+        }
+        .image-pomegues
+        {
+            height: 120px;
+        }
+        .bordure-pomegues
+        {
+          margin-left: 20px;
+          width: 55%;
+          height: 160px;
+          margin-top: 30px;
+          position: static;
+          right: 100px;
+        }
+        .bordure-frioul
+        {
+          margin-left: 20px;
+          position:static;
+          bottom: 500px;
+          margin-top: 30px;
+          width: 55%;
+          height: 160px;
+        }
+        .image-frioul
+        {
+            height: 120px;
+        }
+        .bordure-calanques
+        {
+           margin-left: 275px;
+           margin-top: 30px;
+           width: 55%;
+           height: 160px;
+           position: relative;
+           right: 253px;
+        }
+        .image-calanques
+        {
+            height: 120px;
+        }
+        .bordure-notre-dame
+        {
+          margin-left: 90px;
+          margin-top: 30px;
+          width: 55%;
+          height: 160px;
+        }
+        .image-notre-dame
+        {
+            height: 120px;
+        }
+        .bordure-longchamp
+        {
+          margin-left: 20px;
+          position: static;
+          top: 5px;
+          margin-top: 30px;
+          width: 55%;
+          height: 160px;
+        }
+        .image-longchamp
+        {
+            height: 120px;
+        }
+    
+        footer 
+        {
+          position: relative;
+          top:700px;
+          flex-direction: column;
+          width: 60%;
+        }
+        .nos-hebergements
+        {
+          position: relative;
+          right: 130px;
+        }
+        .assistance
+        {
+            position: relative;
+            right: 130px;
+        }
+    
+       
+    
+    
+        
+    }  
 
