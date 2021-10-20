@@ -1,7 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 #bloc_page
 {
     width: 100%;
-    margin: 50px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 #logo img
 {
@@ -37,7 +42,7 @@ nav
     list-style-type: none; /* pour enlever le puce du menu */
     display: flex;
     justify-content: flex-end;
-    margin-right: 50px;
+    margin-right: 70px;
 }
 nav a
 {
@@ -71,7 +76,7 @@ nav a:hover
 {
     font-size: 60%;
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-top: 10px;
     position:relative;
     bottom: 9px;
 }
@@ -115,9 +120,9 @@ nav a:hover
     text-decoration: none;
     font-size: 85%;
     padding-top: 7px;
-    padding-left: 7px;
+    padding-left: 10px;
     background-color: #0065FC;
-    width: 8%;
+    width: 7.5%;
     color: white;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
@@ -132,7 +137,13 @@ nav a:hover
 .information
 {
     position: relative;
-    bottom: 30px;
+    float: left;
+    width: 100%;
+}
+.section-hebergement{
+    position: relative;
+    float: left;
+    width: 100%;
 }
 .icons-information
 {
@@ -551,10 +562,11 @@ nav a:hover
 .bloc1
 {
     border: none;
-    width: 65%;
+    width: 68%;
     height: 580px;
     border-radius: 10px;
     background-color: #f2f2f2;
+    float: left;
 } 
 .bordure-images1
 {
@@ -578,25 +590,25 @@ aside
 {
     border: none;
     height: 580px;
-    width: 28%;
+    width: 30%;
     border-radius: 10px;
     background-color: #f2f2f2;
     position: relative;
-    left: 830px;
-    bottom: 580px;
-    margin-left: 4px;
+    margin-left: 2%;
+    float: left;
 }
 .title-populaire
 {
     font-size: 120%;
     font-weight: normal;
-    padding-left: 30px; 
+    margin-left: 33px;
+    margin-top: 38px;
 }
 .icons-populaires
 {
-    position: relative;
-    left: 80%;
-    top: 6%;
+    position: absolute;
+    right: 70px;
+    top: 42px;
     
 }
 .bordure-images2
@@ -609,7 +621,7 @@ aside
     width: 75%;
     height: 135px;
     border-radius: 15px;
-    margin-left: 25px;
+    margin-left: 35px;
     margin-bottom: 30px;
     box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
 }
@@ -636,14 +648,14 @@ aside
     border: none;
     width: 100%;
     height: 520px;
+    margin-top: 20px;
     position: relative;
-    bottom: 520px;
+    float: left;
 }
 .activites
 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
 }
 .title-activites
 {
@@ -692,11 +704,12 @@ aside
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
+
 .bordure-vieux-port
 {
     border: none;
     border-radius: 15px;
-    width: 20%;
+    width: 35%;
     height: 370px;
     box-shadow: 1.1px 1.1px 10px 1.1px lightgray;
 }
@@ -704,52 +717,52 @@ aside
 {
     border: none;
     border-radius: 15px;
-    width: 20%;
+    width: 35%;
     height: 190px;
     position: relative;
-    left: 60px;
+    left: 120px;
     box-shadow: 1.1px 1.1px 10px 1.1px lightgray;   
 }
 .bordure-frioul
 {
     border: none;
     border-radius: 15px;
-    width: 20%;
+    width: 35%;
     height: 145px;
     position: relative;
-    top: 225px;
-    right: 190px;
+    top: 220px;
+    right: 80px;
     box-shadow: 1.1px 1.1px 10px 1.1px lightgray;
 }
 .bordure-calanques
 {
     border: none;
     border-radius: 15px;
-    width: 20%;
+    width: 35%;
     height: 370px;
     position: relative;
-    right: 130px;
+    left: 40px;
     box-shadow: 1.1px 1.1px 10px 1.1px lightgray;
 }
 .bordure-notre-dame
 {
     border: none;
     border-radius: 15px;
-    width: 20%;
+    width: 35%;
     height: 170px;
     position: relative;
-    right: 65px;
+    left: 165px;
     box-shadow: 1.1px 1.1px 10px 1.1px lightgray;
 }
 .bordure-longchamp
 {
     border: none;
     border-radius: 10px;
-    width: 20%;
+    width: 35%;
     height: 170px;
     position: relative;
-    bottom: 170px;
-    left: 940px;
+    top: 200px;
+    right: 30px;
     box-shadow: 1.1px 1.1px 10px 1.1px lightgray;
     
 }
@@ -827,19 +840,14 @@ aside
 }
 
 /*footer*/
-footer
-{
+footer{
     border: none;
     background-color:#f2f2f2;
-    margin-right: 50px;
-}
-footer
-{
     display: flex;
     justify-content:flex-start;
-    padding-left: 20px;
     position: relative;
-    bottom: 550px;
+    clear: left;
+    width: 100%;
 }
 
 h3
@@ -880,22 +888,77 @@ footer a:hover
 {
     color: #0065FC;
 }
-@media screen and (min-width:768px) and (max-width:992px)
+@media all and (min-width:768px) and (max-width:992px)
 {
-    #bloc_page
+    
+    .filtres-recherche
     {
-      width: 100%;
-      margin: auto;
+        margin-right: 20px;
     }
-    .bloc-animaux
+    .bouton-rechercher
+    {
+            display: none;
+    }
+    .icons-recherche 
+    {
+         width: 3%;
+         height: 23px;
+         margin-left: 1px;
+         cursor: pointer;
+         display: block;
+    }
+    .bloc1
     {
         width: 100%;
     }
-    .aside 
+    aside 
     {
-        margin-right: 50px;
+        position:absolute;
+        right: 150px;
+        top: 600px;
+        width: 60%;    
     }
-
+    .bordure-images2
+    {
+        margin-left: 60px;
+        width: 70%;
+    }
+    .bloc-activites
+    {
+        margin-top: 600px;
+    }
+    .bordure-vieux-port
+    {
+       width: 500px;
+    }
+    .bordure-pomegues
+    {
+       position: static;
+       margin-left: 30px;
+       width: 500px;
+    }
+    .bordure-frioul
+    {
+        position: relative;
+        right: 170px;
+        width: 500px;
+    }
+    .bordure-calanques
+    {
+        width: 500px;
+        
+        
+    }
+    .bordure-longchamp
+    {
+       width: 500px;
+        
+    }
+    .bordure-notre-dame
+    {
+        width: 500px;
+    }
+    
 
 
 
@@ -906,7 +969,7 @@ footer a:hover
         #bloc_page
         {
             width: 100%; 
-            margin: 50px;
+            margin: auto;
         }
         #logo
         {
@@ -1008,7 +1071,7 @@ footer a:hover
         }
         .bordure-images1
         {
-            width: 90%;
+            width: 100%;
             padding-left: 2px;
             margin-left: 25px;
         }
@@ -1020,12 +1083,12 @@ footer a:hover
         {
             position: relative;
             left: 2px;
-            width: 65%;
+            width: 70%;
             bottom: 1430px;
         }
         .bordure-images2
         {
-            width: 70%;
+            width: 65%;
             margin-left: 50px;
         }
         .bloc-activites
@@ -1044,7 +1107,7 @@ footer a:hover
         .bordure-vieux-port
         {
             margin-left: 20px;
-            width: 55%;
+            width: 60%;
             height: 160px;
         }
         .image-vieux-port
@@ -1058,7 +1121,7 @@ footer a:hover
         .bordure-pomegues
         {
           margin-left: 20px;
-          width: 55%;
+          width: 60%;
           height: 160px;
           margin-top: 30px;
           position: static;
@@ -1070,7 +1133,7 @@ footer a:hover
           position:static;
           bottom: 500px;
           margin-top: 30px;
-          width: 55%;
+          width: 60%;
           height: 160px;
         }
         .image-frioul
@@ -1079,12 +1142,11 @@ footer a:hover
         }
         .bordure-calanques
         {
-           margin-left: 275px;
            margin-top: 30px;
-           width: 55%;
+           width: 60%;
            height: 160px;
-           position: relative;
-           right: 253px;
+           position: static;
+           margin-left: 20px;
         }
         .image-calanques
         {
@@ -1092,10 +1154,11 @@ footer a:hover
         }
         .bordure-notre-dame
         {
-          margin-left: 90px;
           margin-top: 30px;
-          width: 55%;
+          width: 60%;
           height: 160px;
+          position: relative;
+          left: 20px;
         }
         .image-notre-dame
         {
@@ -1107,7 +1170,7 @@ footer a:hover
           position: static;
           top: 5px;
           margin-top: 30px;
-          width: 55%;
+          width: 60%;
           height: 160px;
         }
         .image-longchamp
@@ -1120,6 +1183,7 @@ footer a:hover
           position: relative;
           top:700px;
           flex-direction: column;
+          margin-left: 20px;
           width: 60%;
         }
         .nos-hebergements
