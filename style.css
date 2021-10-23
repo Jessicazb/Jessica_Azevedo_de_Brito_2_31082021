@@ -1,0 +1,1490 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#bloc_page
+{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#logo img
+{
+    width: auto;
+    height: 35px;
+    object-fit: cover;
+    padding-top: 10px;
+    position: relative;
+    top: 15px;
+}
+@font-face {
+    font-family:Raleway-SemiBold;
+    src: url('fonts/Raleway-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:Raleway-Regular;
+    src: url('fonts/Raleway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+    font-family: Raleway-SemiBold;
+}
+.font-thin
+{
+  font-family: Raleway-Regular;
+}
+/* header */
+nav 
+{
+    list-style-type: none; /* pour enlever le puce du menu */
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+}
+nav a
+{
+    padding-left: 30px;
+    font-size: 75%;
+    font-weight: normal;
+    position: relative;
+    bottom: 25px;
+    color: #181818;
+    text-decoration: none;
+}   
+nav a:hover
+{
+    color: #0065FC; /* pour activer le survol */
+    text-decoration: overline;
+}
+.nav-hebergements a
+{
+    color: #0065FC;
+}
+.nav-sinscrire a
+{
+    color: #0065FC;
+}
+.nav-activites2
+{
+    display: none;
+}
+#title_principal
+{
+    font-size: 65%;
+    font-weight: normal; 
+}
+.description_title
+{
+    font-size: 60%;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    position:relative;
+    bottom: 9px;
+}
+.icons-localisation
+{
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: #f2f2f2;
+    width: 2.2%;
+    height: 28px;
+    padding-top: 7px;
+    padding-left: 15px;
+    position: relative;
+    left: 5px;
+}
+.recherche
+{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    position: relative;
+    right: 30px;
+}
+.icons-recherche 
+{
+    border: #0065FC solid;
+    background-color: #0065FC;
+    border-width: 2px;
+    width: 3%;
+    height: 25px;
+    border-radius: 0 10px 10px 0;
+    color:white;
+    padding-top: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: none;
+}
+.bouton-rechercher 
+{
+    display: flex;
+    text-decoration: none;
+    font-size: 85%;
+    padding-top: 9px;
+    padding-left: 10px;
+    background-color: #0065FC;
+    width: 7%;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+/* div/bloc recherche logements */
+
+.filtres-recherche
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-right: 350px;
+}
+.filtre
+{
+    padding-top: 10px;
+    font-size: 85%;
+    padding-right: 5px;
+}
+.bloc-economique
+{
+  display: flex;
+}
+.economique 
+{
+    border: #f2f2f2 solid;
+    border-radius: 20px;
+    font-size: 85%;
+    width: 90%;
+    height: 28px;
+    padding-left: 45px;
+    padding-right: 10px;
+    padding-top: 8px;
+    position: relative;
+    right: 37px;
+}
+.economique a
+{
+    text-decoration: none;
+    color: #181818;
+}
+.economique a:hover
+{
+    color: #0065FC;
+}
+.icons-economique 
+{
+ border: #DEEBFF solid;
+ background-color: #DEEBFF;
+ border-radius: 50px;
+ color: #0065FC;
+ padding-top: 8px;
+ padding-bottom: 5px;
+ padding-left: 5px;
+ padding-right: 5px;
+}
+.bloc-familial
+{
+  display: flex;
+}
+.familial 
+{
+    border: #f2f2f2 solid;
+    border-radius: 20px;
+    font-size: 85%;
+    width: 70%;
+    height: 28px;
+    padding-left: 45px;
+    padding-right: 13px;
+    padding-top: 8px;
+    position: relative;
+    right: 40px;
+}
+.familial a
+{
+ text-decoration: none;
+ color: #181818;
+}
+.familial a:hover
+{
+  color: #0065FC;
+}
+.icons-familial
+{
+    border: #DEEBFF solid;
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    color: #0065FC;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bloc-romantique
+{
+  display: flex;
+}
+.romantique
+{
+    border: #f2f2f2 solid;
+    border-radius: 20px;
+    font-size: 85%;
+    width: 90%;
+    height: 28px;
+    padding-left: 45px;
+    padding-right: 10px;
+    padding-top: 8px;
+    position: relative;
+    right: 42px;
+}
+.romantique a
+{
+ text-decoration: none;
+ color: #181818;
+}
+.romantique a:hover
+{
+ color: #0065FC;
+}
+.icons-romantique
+{
+    border: #DEEBFF solid;
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    color: #0065FC;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.animaux 
+{
+    border: #f2f2f2 solid;
+    border-radius: 20px;
+    font-size: 85%;
+    width: 75%;
+    height: 28px;
+    padding-top: 10px;
+    padding-left: 50px;
+    position: relative;
+    right: 2px; 
+    bottom: 42px; 
+}
+.animaux a 
+{
+  text-decoration: none;
+  color: #181818;
+}
+.animaux a:hover
+{
+ color: #0065FC;
+}
+.icons-animaux
+{
+    border: #DEEBFF solid;
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    color: #0065FC;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* section */
+section
+{
+    position: relative;
+    bottom: 50px;
+}
+.search-txt
+{
+    display: flex;
+    height: 30px;
+    border: none; /*pour énlever la bordure*/
+    padding-left: 20px;
+}   
+.information
+{
+    width: 100%;
+}
+.section-hebergement
+{
+    width: 100%;
+}
+.icons-information
+{
+    border: #DEEBFF solid;
+    border-width: 2px;
+    width: 1.2%;
+    height: 22px;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-top: 2px;
+    color: #0065FC;
+    position: relative;
+    top: 44px;
+}
+.information-logement
+{
+    padding-bottom: 35px; 
+    margin-left: 32px;
+    margin-top: 25px;
+    font-size: 75%;
+    font-family: Raleway-Regular;
+}
+/* bloc hébergement */
+.bloc1
+{
+    border: none;
+    width: 68%;
+    height: 580px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    float: left;
+} 
+.ligne
+{
+    display: flex;
+}
+.title-hebergement
+{
+    font-size: 120%;
+    font-weight: normal;
+    padding-left: 20px;
+    padding-top: 40px;  
+}
+.bordure-images1
+{
+    border: none;
+    width: 28%;
+    height: 180px;
+    border-radius: 15px;
+    background-color: white;
+    padding-top: 5px;
+    padding-left: 3px;
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+}
+.images-hebergement
+{
+    width: 95%;
+    height: 110px;
+    object-fit: cover;
+    border: none;
+    border-radius: 15px 15px 0 0;
+    padding-left: 4px;
+}
+.description-cannebiere
+{
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 3px;
+    padding-left: 6px; 
+}
+.texte-cannebiere a:hover
+{
+    color: #0065FC;
+}
+.texte-cannebiere a
+{
+    color: #181818;
+    text-decoration: none;
+}
+
+.description-hotel-du-port
+{
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 3px; 
+    padding-left: 6px;
+}
+.texte-hotel-port a
+{
+    color: #181818;
+    text-decoration: none;
+}
+.texte-hotel-port a:hover
+{
+    color: #0065FC;
+}
+.description-les-mouettes
+{
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 3px; 
+    padding-left: 6px;
+}
+.texte-les-mouettes a
+{
+    color: #181818;
+    text-decoration: none;
+}
+.texte-les-mouettes a:hover
+{
+    color: #0065FC;
+}
+.description-hotel-de-la-mer
+{
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 3px; 
+    padding-left: 6px;
+}
+.texte-hotel-de-la-mer a
+{
+    color: #181818;
+    text-decoration: none;
+}
+.texte-hotel-de-la-mer a:hover
+{
+    color: #0065FC;
+}
+.description-le-panier
+{
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 3px; 
+    padding-left: 6px;
+}
+.texte-le-panier a
+{
+    color: #181818;
+    text-decoration: none;
+}
+.texte-le-panier a:hover
+{
+    color: #0065FC;
+}
+.description-chez-amina
+{
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 3px; 
+    padding-left: 6px;
+}
+.texte-chez-amina a
+{
+    color: #181818;
+    text-decoration: none;
+}
+.texte-chez-amina a:hover
+{
+    color: #0065FC;
+}
+.icons-star-section-bleu
+{
+    color: #0065FC;
+    position: relative;
+    bottom: 10px;
+}
+.icons-star-section-bas-bleu
+{
+    color: #0065FC;
+    position: relative;
+    bottom: 10px;
+}
+.icons-star-section-gris
+{
+    color:#f2f2f2;
+    position: relative;
+    bottom: 24px;
+    left: 65px;
+}
+.icons-star-section-gris-les-mouettes
+{
+    color: #f2f2f2;
+    position: relative;
+    left: 65px;
+    bottom: 14px;
+}
+.icons-star-section-gris-de-la-mer
+{
+    color: #f2f2f2;
+    position: relative;
+    left: 50px;
+    bottom: 14px;
+}
+.icons-star-section-gris-le-panier
+{
+    color: #f2f2f2;
+    position: relative;
+    left: 65px;
+    bottom: 14px;
+}
+a:hover
+{
+    color: #0065FC;
+}
+.prix-hotel
+{
+    padding-top: 3px;
+}
+.afficher-plus
+{
+    font-size: 85%;
+    padding-left: 30px;
+    padding-top: 18px;
+    cursor: pointer;   
+}
+/* Aside/ Bloc les plus populaires */
+aside
+{
+    border: none;
+    height: 580px;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    position: relative;
+    margin-left: 2%;
+    float: left;
+}
+.title-populaire
+{
+    font-size: 120%;
+    font-weight: normal;
+    margin-left: 33px;
+    margin-top: 38px;
+}
+.images-les-plus-populaires
+{
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    padding-left: 5px;
+    padding-top: 7px;
+}
+.bordure-images2  /* images les plus populaires */
+{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    width: 70%;
+    height: 135px;
+    border-radius: 15px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+}
+.description-le-soleil
+{
+    position: relative;
+    top: 15px;
+    left: 7px;
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 3px; 
+    padding-left: 4px;
+    padding-right: 16px;
+}
+.texte-le-soleil a
+{
+    color: #181818;
+    text-decoration: none;
+}
+.texte-le-soleil a:hover
+{
+    color: #0065FC;
+}
+.description-chambres-hotes
+{
+    position: relative;
+    top: 15px;
+    left: 7px;
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 3px; 
+    padding-left: 4px;
+}
+.texte-chambres-hotes a
+{
+    color: #181818;
+    text-decoration: none;
+}
+.texte-chambres-hotes a:hover
+{
+    color: #0065FC;
+}
+.description-tout-bleu
+{
+    position: relative;
+    top: 15px;
+    left: 7px;
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 3px; 
+    padding-left: 4px; 
+    padding-right: 16px;
+}
+.texte-tout-bleu a
+{
+    color: #181818;
+    text-decoration: none;
+}
+.texte-tout-bleu a:hover
+{
+    color: #0065FC;
+}
+.prix-hotel-populaires
+{
+    padding-top: 10px;
+}
+
+.icons-populaires
+{
+    position: absolute;
+    right: 70px;
+    top: 42px;
+    
+}
+.icons-star-aside-bleu1
+{
+    color: #0065FC;
+    padding-top: 20px;
+}
+.icons-star-aside-bleu
+{
+    color:#0065FC;
+    padding-top: 25px;
+}
+.icons-star-aside-gris
+{
+    color: #f2f2f2;
+    position: relative;
+    left: 65px;
+    bottom: 13.7px;
+}
+/* section activites*/
+
+#activites-responsive
+{
+    display: none;
+}
+#bloc-activites
+{
+    border: none;
+    width: 100%;
+    height: 520px;
+    margin-top: 50px;
+    position: relative;
+    float: left;
+}
+.title-activites
+{
+    font-size: 120%;
+    font-weight: normal;
+}
+#activites
+{
+    width: 100%;
+    height: 460px;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    border: none;
+    clear: left;
+}
+#bordure-vieux-port
+{
+    width: 270px;
+    height: 415px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1.1px 1.1px 5px 1.1px lightgray;    
+}
+#bordure-vieux-port img 
+{
+    height: 370px;
+    width: 270px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+#description-vieux-port
+{
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#description-vieux-port a:hover
+{
+    color: #0065FC;
+}
+#bordure-pomegues
+{
+    width: 270px;
+    height: 225px;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    left: 50px;
+    box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+}
+#bordure-pomegues img
+{
+    width: 270px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+#description-pomegues
+{
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#description-pomegues a:hover
+{
+    color: #0065FC;
+}
+#bordure-frioul
+{
+    width: 270px;
+    height: 155px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 260px;
+    position: relative;
+    right: 217px;
+    box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+}
+#bordure-frioul img
+{
+    width: 270px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+#description-frioul
+{
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#description-frioul a:hover
+{
+    color: #0065FC;
+}
+#bordure-calanques
+{
+    width: 270px;
+    height: 415px;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    right: 170px;
+    box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+}
+#bordure-calanques img
+{
+    height: 370px;
+    width: 270px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+#description-calanques
+{
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#description-calanques a:hover
+{
+    color: #0065FC;
+}
+#bordure-notre-dame
+{
+    width: 270px;
+    height: 180px;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    right: 130px;
+    box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+}
+#bordure-notre-dame img
+{
+    width: 270px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+#description-notre-dame
+{
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#description-notre-dame a:hover
+{
+    color: #0065FC;
+}
+#bordure-longchamp
+{
+    width: 270px;
+    height: 190px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 215px;
+    position: relative;
+    right: 400px;
+    box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+}
+#bordure-longchamp img
+{
+    width: 270px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+#description-longchamp
+{
+    font-size: 75%;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#description-longchamp a:hover
+{
+    color: #0065FC;
+}
+a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*footer*/
+footer{
+    border: none;
+    background-color:#f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.description-footer
+{
+    padding-bottom: 40px;
+}
+.a-propos
+{
+    margin-right: 80px;
+}
+.nos-hebergements
+{
+    padding-right: 100px;
+}
+.assistance
+{
+    padding-right: 100px;
+}
+h3
+{
+    font-size: 85%;
+    padding-top: 20px;
+    height: 30px;
+}
+
+.hauteur-liens
+{
+    height: 30px;
+}
+footer a 
+{  
+    font-size: 85%;
+    color: #181818;
+    text-decoration: none;
+    list-style-type: none; /* pour enlever le puce du menu */ 
+    padding-top: 30px;
+}
+footer a:hover
+{
+    color: #0065FC;
+}
+
+          /* Version tablette */
+
+@media screen and (min-width:768px) and (max-width:992px)
+{
+    
+    body 
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+      /* header */
+    .filtres-recherche
+    {
+        margin-right: 20px;
+    }
+    .bouton-rechercher
+        {
+            display: none;
+        }
+    .icons-recherche 
+    {
+        width: 4%;
+        height: 23px;
+        padding-top: 5px;
+        padding-left: 10px;
+        margin-left: 1px;
+        cursor: pointer;
+        display: block;
+    }
+    /* section */
+    .icons-information
+    {
+        width: 2%;
+    }
+    .bloc1 /* bloc hébergement */
+    {
+        width: 100%;
+    }
+    aside 
+    {
+        
+        width: 65%;
+        position: relative;
+        top: 50px;
+        left:150px;
+    }
+    .bordure-images2
+    {
+        width: 57%;
+        margin-left: 80px;
+    }
+    .title-populaire
+    {
+        margin-left: 80px;
+    }
+    #bloc-activites
+    {
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+    
+    #bordure-vieux-port
+    {
+        width: 300px;
+        height: 250px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 1.1px 1.1px 5px 1.1px lightgray;    
+    }
+    #bordure-vieux-port img 
+    {
+        height: 200px;
+        width: 220px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    #bordure-pomegues
+    {
+        width: 300px;
+        height: 250px;
+        border: none;
+        border-radius: 15px;
+        position: relative;
+        left: 60px;
+        box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+    }
+    #bordure-pomegues img
+    {
+        width: 220px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    #bordure-frioul
+    {
+        width: 300px;
+        height: 250px;
+        border: none;
+        border-radius: 15px;
+        margin-top: 260px;
+        position: relative;
+        right: 440px;
+        top: 50px;
+        box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+    }
+    #bordure-frioul img
+    {
+        width: 220px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    #bordure-calanques
+    {
+        width: 300px;
+        height: 250px;
+        border: none;
+        border-radius: 15px;
+        position: relative;
+        right: 380px;
+        top: 310px;
+        box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+    }
+    #bordure-calanques img
+    {
+        height: 200px;
+        width: 220px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    #description-calanques
+    {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #bordure-notre-dame
+    {
+        width: 300px;
+        height: 250px;
+        border: none;
+        border-radius: 15px;
+        position: relative;
+        right: 310px;
+        box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+    }
+    #bordure-notre-dame img
+    {
+        width: 220px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    #bordure-longchamp
+    {
+        width: 300px;
+        height: 250px;
+        border: none;
+        border-radius: 15px;
+        margin-top: 215px;
+        position: relative;
+        right: 530px;
+        top: 95px;
+        box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+    }
+    #bordure-longchamp img
+    {
+        width: 220px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    a 
+    {
+        text-decoration: none;
+        color: black;
+    }
+    
+    
+    /*footer*/
+    footer
+    {
+        position: relative;
+        top: 200px; 
+        padding-left: 30px; 
+    }
+    
+
+}
+         /* Version mobile */
+
+    @media screen and (max-width:768px)
+    {
+        #bloc_page
+        {
+            width: 100%; 
+            margin: auto;
+        }
+        body 
+        {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        }
+        /* header */
+        #logo
+        {
+            width: 170%;
+            padding-bottom: 30px;
+            margin-left: 10px;
+        }
+         nav 
+        {
+            display: flex;
+            justify-content:flex-start;
+            position: relative;
+            right: 30px;
+            margin-top: 20px;
+            margin-left: 40px;
+        }
+         nav a:hover
+        {
+          color: #0065FC; /* pour activer le survol */
+          text-decoration:underline;
+        }
+        .nav-sinscrire
+        {
+            position: relative;
+            bottom: 42px;
+            right: 25px;
+        }
+        .nav-activites
+        {
+            display: none;
+        }
+        .nav-activites2
+        {
+            display: block;
+            position: relative;
+            left: 25px;
+        }
+        #title_principal
+        {
+            margin-right: 180px;
+            margin-left: 5px;
+        }
+        .description_title 
+        {
+            margin-left: 5px;
+        }
+        .recherche
+        {
+            margin-left: 30px;
+        }
+        .information
+        {
+            margin-left: 15px;
+        }
+        .icons-information
+        {
+            width: 3%;
+        }
+        .filtre
+        {
+            padding-bottom: 40px;
+        }
+        .filtres-recherche
+        {
+        flex-direction: column;
+        margin-left: 10px;
+    
+        }
+        .icons-localisation
+        {
+         width: 5%;
+         padding-left: 10px;
+        }
+        .bouton-rechercher
+        {
+            display: none;
+        }
+        .icons-recherche 
+        {
+         width: 6%;
+         height: 23px;
+         padding-top: 6px;
+         padding-left: 10px;
+         margin-left: 1px;
+         cursor: pointer;
+         display: block;
+        }
+        .filtres-recherche
+        {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .bloc-familial
+        {
+            padding-left: 175px;
+            position: relative;
+            bottom: 45px;
+        }
+        .bloc-romantique
+        {
+            position: relative;
+            bottom: 30px;
+        }
+        .bloc-animaux
+        {
+            position: relative;
+            bottom: 20px;
+            width: 180px;
+        }
+        /* section */
+        .bloc1
+        {
+            position: relative;
+            top: 600px;
+            left: 0px;
+            width: 80%;
+            background-color: white;
+        }
+        .ligne
+        {
+            flex-direction: column;
+        }
+        .title-hebergement
+        {
+            margin-left: 10px;
+        }
+        .bordure-images1
+        {
+            width: 90%;
+            margin-left: 25px;
+        }
+        .images-hebergement
+        {
+            width: 97%;
+        }
+        .afficher-plus
+        {
+            padding-right: 70px;
+        }
+        /* Aside/ Les plus populaires */
+        aside 
+        {
+            position: relative;
+            left: 2px;
+            width: 82%;
+            bottom: 580px;
+        }
+        .title-populaire
+        {
+            margin-left: 40px;
+            margin-bottom: 3px;
+        }
+        .bordure-images2
+        {
+            width: 75%;
+            margin-left: 40px;
+        }
+        .icons-star-chambre-mobile
+        {
+            position:relative;
+            bottom: 10px;
+        }
+        /* Section Activités */
+        #activites
+        {
+            display: none;
+        }
+        #bloc-activites
+        {
+            margin-top: 900px;
+        }
+        .title-activites
+        {
+            margin-left: 30px;
+        }
+        #activites-responsive
+        {
+            display: block;
+            margin-left: 30px;
+        }
+        #bordure-vieux-port2
+        {
+            width: 75%;
+            height: 200px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+            margin-top: 30px;    
+            
+        }
+        #image-vieux-port2
+        {
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        #description-vieux-port2
+        {
+            font-size: 75%;
+            font-weight: normal;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        #description-vieux-port2 a:hover
+        {
+            color: #0065FC;
+        }
+        #bordure-pomegues2
+        {
+            width: 75%;
+            height: 200px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+            margin-top: 30px;   
+        }
+        #image-pomegues2
+        {
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        #description-pomegues2
+        {
+            font-size: 75%;
+            font-weight: normal;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        #description-pomegues2 a:hover
+        {
+            color: #0065FC;
+        }
+        #bordure-frioul2
+        {
+            width: 75%;
+            height: 200px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+            margin-top: 30px;  
+        }
+        #image-frioul2
+        {
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        #description-frioul2
+        {
+            font-size: 75%;
+            font-weight: normal;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        #description-frioul2 a:hover
+        {
+            color: #0065FC;
+        }
+        #bordure-calanques2
+        {
+            width: 75%;
+            height: 200px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+            margin-top: 30px;   
+        }
+        #image-calanques2
+        {
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        #description-calanques2
+        {   
+            font-size: 75%;
+            font-weight: normal;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        #description-calanques2 a:hover
+        {
+            color: #0065FC;
+        }
+        #bordure-notre-dame2
+        {
+            width: 75%;
+            height: 200px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+            margin-top: 30px;   
+        }
+        #image-notre-dame2
+        {
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        #description-notre-dame2
+        {   
+            font-size: 75%;
+            font-weight: normal;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        #description-notre-dame2 a:hover
+        {
+            color: #0065FC;
+        }
+        #bordure-longchamp2
+        {
+            width: 75%;
+            height: 200px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+            margin-top: 30px;   
+        }
+        #image-longchamp2
+        {
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        #description-longchamp2
+        {
+            font-size: 75%;
+            font-weight: normal;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        #description-longchamp2 a:hover
+        {
+            color: #0065FC;
+        }
+        /* footer */
+        footer  
+        {
+            display:flex;
+            flex-direction: column;
+            position: relative;
+            width: 70%;
+            top: 890px; 
+            padding-left: 30px; 
+            margin-left: 15px;  
+        }
+        
+        
+       
+    
+    
+        
+    }  
+
