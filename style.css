@@ -40,10 +40,16 @@ body
 /* header */
 nav 
 {
-    list-style-type: none; /* pour enlever le puce du menu */
+    margin-right: 70px;
+}
+nav ul
+{
     display: flex;
     justify-content: flex-end;
-    margin-right: 70px;
+}
+nav li
+{
+    list-style-type: none; /* pour enlever le puce du menu */
 }
 nav a
 {
@@ -68,13 +74,9 @@ nav a:hover
 {
     color: #0065FC;
 }
-.nav-activites2
-{
-    display: none;
-}
 #title_principal
 {
-    font-size: 65%;
+    font-size: 125%;
     font-weight: normal; 
 }
 .description_title
@@ -139,7 +141,6 @@ nav a:hover
 .filtres-recherche
 {
     display: flex;
-    justify-content: space-around;
     align-items: flex-start;
     margin-top: 40px;
     margin-right: 350px;
@@ -148,7 +149,7 @@ nav a:hover
 {
     padding-top: 10px;
     font-size: 85%;
-    padding-right: 5px;
+    padding-right: 20px;
 }
 .bloc-economique
 {
@@ -364,7 +365,7 @@ section
     height: 180px;
     border-radius: 15px;
     background-color: white;
-    padding-top: 5px;
+    padding-top: 7px;
     padding-left: 3px;
     margin-left: 25px;
     margin-right: 10px;
@@ -666,14 +667,10 @@ aside
 }
 /* section activites*/
 
-#activites-responsive
-{
-    display: none;
-}
 #bloc-activites
 {
     border: none;
-    width: 100%;
+    width: 90%;
     height: 520px;
     margin-top: 50px;
     position: relative;
@@ -919,9 +916,13 @@ footer a:hover
 
           /* Version tablette */
 
-@media screen and (min-width:768px) and (max-width:992px)
+@media all and (min-width:768px) and (max-width:1024px)
 {
     
+    #bloc_page
+    {
+    width: 100%;
+    }
     body 
     {
         width: 100%;
@@ -931,6 +932,7 @@ footer a:hover
         overflow-x: hidden;
     }
       /* header */
+     
     .filtres-recherche
     {
         margin-right: 20px;
@@ -956,34 +958,36 @@ footer a:hover
     }
     .bloc1 /* bloc hébergement */
     {
-        width: 100%;
+        width: 100%;  
     }
     aside 
     {
         
-        width: 65%;
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
         position: relative;
-        top: 50px;
-        left:150px;
+        right: 15px;
+    }
+    #version-tablette
+    {
+        display: flex;
+        align-items: center;
     }
     .bordure-images2
-    {
-        width: 57%;
-        margin-left: 80px;
+    { 
+        width: 255px;
+        margin-left: 40px;
     }
-    .title-populaire
-    {
-        margin-left: 80px;
-    }
-    #bloc-activites
+    #bloc-activites 
     {
         margin-top: 100px;
-        margin-left: 20px;
+        margin-left: 7px;
     }
     
     #bordure-vieux-port
     {
-        width: 300px;
+        width: 350px;
         height: 250px;
         border: none;
         border-radius: 15px;
@@ -992,61 +996,61 @@ footer a:hover
     #bordure-vieux-port img 
     {
         height: 200px;
-        width: 220px;
+        width: 250px;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
     #bordure-pomegues
     {
-        width: 300px;
+        width: 350px;
         height: 250px;
         border: none;
         border-radius: 15px;
         position: relative;
-        left: 60px;
+        left: 92px;
         box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
     }
     #bordure-pomegues img
     {
-        width: 220px;
+        width: 250px;
         height: 200px;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
     #bordure-frioul
     {
-        width: 300px;
+        width: 350px;
         height: 250px;
         border: none;
         border-radius: 15px;
         margin-top: 260px;
         position: relative;
-        right: 440px;
+        right: 495px;
         top: 50px;
         box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
     }
     #bordure-frioul img
     {
-        width: 220px;
+        width: 250px;
         height: 200px;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
     #bordure-calanques
     {
-        width: 300px;
+        width: 350px;
         height: 250px;
         border: none;
         border-radius: 15px;
         position: relative;
-        right: 380px;
+        right: 405px;
         top: 310px;
         box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
     }
     #bordure-calanques img
     {
         height: 200px;
-        width: 220px;
+        width: 250px;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
@@ -1057,36 +1061,36 @@ footer a:hover
     }
     #bordure-notre-dame
     {
-        width: 300px;
+        width: 350px;
         height: 250px;
         border: none;
         border-radius: 15px;
         position: relative;
-        right: 310px;
+        right: 320px;
         box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
     }
     #bordure-notre-dame img
     {
-        width: 220px;
+        width: 250px;
         height: 200px;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
     }
     #bordure-longchamp
     {
-        width: 300px;
+        width: 350px;
         height: 250px;
         border: none;
         border-radius: 15px;
         margin-top: 215px;
         position: relative;
-        right: 530px;
+        right: 568px;
         top: 95px;
         box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
     }
     #bordure-longchamp img
     {
-        width: 220px;
+        width: 250px;
         height: 200px;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
@@ -1104,6 +1108,8 @@ footer a:hover
         position: relative;
         top: 200px; 
         padding-left: 30px; 
+        width: 96%;
+        margin-left: 7px;
     }
     
 
@@ -1112,11 +1118,7 @@ footer a:hover
 
     @media screen and (max-width:768px)
     {
-        #bloc_page
-        {
-            width: 100%; 
-            margin: auto;
-        }
+         
         body 
         {
         width: 100%;
@@ -1130,16 +1132,16 @@ footer a:hover
         {
             width: 170%;
             padding-bottom: 30px;
-            margin-left: 10px;
+            margin-left: 40px;
         }
          nav 
         {
             display: flex;
-            justify-content:flex-start;
+            justify-content:space-around;
             position: relative;
             right: 30px;
             margin-top: 20px;
-            margin-left: 40px;
+            margin-left: 90px;
         }
          nav a:hover
         {
@@ -1152,32 +1154,23 @@ footer a:hover
             bottom: 42px;
             right: 25px;
         }
-        .nav-activites
-        {
-            display: none;
-        }
-        .nav-activites2
-        {
-            display: block;
-            position: relative;
-            left: 25px;
-        }
+        
         #title_principal
         {
-            margin-right: 180px;
-            margin-left: 5px;
+            margin-right: 100px;
+            margin-left: 45px;
         }
         .description_title 
         {
-            margin-left: 5px;
+            margin-left: 45px;
         }
         .recherche
         {
-            margin-left: 30px;
+            margin-left: 65px;
         }
         .information
         {
-            margin-left: 15px;
+            margin-left: 45px;
         }
         .icons-information
         {
@@ -1187,12 +1180,7 @@ footer a:hover
         {
             padding-bottom: 40px;
         }
-        .filtres-recherche
-        {
-        flex-direction: column;
-        margin-left: 10px;
-    
-        }
+        
         .icons-localisation
         {
          width: 5%;
@@ -1216,6 +1204,7 @@ footer a:hover
         {
             display: flex;
             flex-direction: column;
+            margin-left: 45px;
             
         }
         .bloc-familial
@@ -1240,7 +1229,7 @@ footer a:hover
         {
             position: relative;
             top: 600px;
-            left: 0px;
+            left: 40px;
             width: 80%;
             background-color: white;
         }
@@ -1269,9 +1258,9 @@ footer a:hover
         aside 
         {
             position: relative;
-            left: 2px;
-            width: 82%;
-            bottom: 580px;
+            left: 35px;
+            width: 90%;
+            bottom: 590px;
         }
         .title-populaire
         {
@@ -1289,196 +1278,134 @@ footer a:hover
             bottom: 10px;
         }
         /* Section Activités */
-        #activites
-        {
-            display: none;
-        }
+        
         #bloc-activites
         {
             margin-top: 900px;
         }
         .title-activites
         {
-            margin-left: 30px;
+            margin-left: 65px;
         }
-        #activites-responsive
+        #activites
         {
-            display: block;
-            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
         }
-        #bordure-vieux-port2
+        #bordure-vieux-port
         {
-            width: 75%;
+            width: 80%;
             height: 200px;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
-            margin-top: 30px;    
-            
+            margin-left: 25px;
         }
-        #image-vieux-port2
+        #bordure-vieux-port img 
         {
             height: 150px;
             width: 100%;
-            object-fit: cover;
-            border-radius: 15px 15px 0 0;
         }
-        #description-vieux-port2
+        #description-vieux-port
         {
-            font-size: 75%;
-            font-weight: normal;
             padding-top: 10px;
-            padding-left: 10px;
+            padding-bottom: 20px;
         }
-        #description-vieux-port2 a:hover
+        #bordure-pomegues
         {
-            color: #0065FC;
+            width: 80%;
+            height: 300px;
+            margin-top: 30px;
+            position: relative;
+            left: 25px;
         }
-        #bordure-pomegues2
-        {
-            width: 75%;
-            height: 200px;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
-            margin-top: 30px;   
-        }
-        #image-pomegues2
+        #bordure-pomegues img 
         {
             height: 150px;
             width: 100%;
-            object-fit: cover;
-            border-radius: 15px 15px 0 0;
         }
-        #description-pomegues2
+        #description-pomegues
         {
-            font-size: 75%;
-            font-weight: normal;
             padding-top: 10px;
-            padding-left: 10px;
+            padding-bottom: 20px;
         }
-        #description-pomegues2 a:hover
+        #bordure-frioul
         {
-            color: #0065FC;
+            width: 80%;
+            height: 300px;
+            margin-top: 30px; 
+            margin-left: 245px;
         }
-        #bordure-frioul2
-        {
-            width: 75%;
-            height: 200px;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
-            margin-top: 30px;  
-        }
-        #image-frioul2
+        #bordure-frioul img 
         {
             height: 150px;
             width: 100%;
-            object-fit: cover;
-            border-radius: 15px 15px 0 0;
         }
-        #description-frioul2
+        #description-frioul
         {
-            font-size: 75%;
-            font-weight: normal;
             padding-top: 10px;
-            padding-left: 10px;
+            padding-bottom: 20px;
         }
-        #description-frioul2 a:hover
+        #bordure-calanques
         {
-            color: #0065FC;
+            width: 80%;
+            height: 300px;
+            margin-top: 30px; 
+            margin-left: 200px;
         }
-        #bordure-calanques2
-        {
-            width: 75%;
-            height: 200px;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
-            margin-top: 30px;   
-        }
-        #image-calanques2
+        #bordure-calanques img
         {
             height: 150px;
             width: 100%;
-            object-fit: cover;
-            border-radius: 15px 15px 0 0;
         }
-        #description-calanques2
-        {   
-            font-size: 75%;
-            font-weight: normal;
+        #description-calanques
+        {
             padding-top: 10px;
-            padding-left: 10px;
+            padding-bottom: 20px;
         }
-        #description-calanques2 a:hover
+        #bordure-notre-dame
         {
-            color: #0065FC;
+            width: 80%;
+            height: 300px;
+            margin-top: 30px; 
+            margin-left: 160px;
         }
-        #bordure-notre-dame2
-        {
-            width: 75%;
-            height: 200px;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
-            margin-top: 30px;   
-        }
-        #image-notre-dame2
+        #bordure-notre-dame img
         {
             height: 150px;
             width: 100%;
-            object-fit: cover;
-            border-radius: 15px 15px 0 0;
         }
-        #description-notre-dame2
-        {   
-            font-size: 75%;
-            font-weight: normal;
+        #description-notre-dame
+        {
             padding-top: 10px;
-            padding-left: 10px;
+            padding-bottom: 20px;
         }
-        #description-notre-dame2 a:hover
+        #bordure-longchamp
         {
-            color: #0065FC;
+            width: 80%;
+            height: 300px;
+            margin-left: 435px;
+            margin-top: 30px; 
         }
-        #bordure-longchamp2
-        {
-            width: 75%;
-            height: 200px;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
-            margin-top: 30px;   
-        }
-        #image-longchamp2
+        #bordure-longchamp img 
         {
             height: 150px;
             width: 100%;
-            object-fit: cover;
-            border-radius: 15px 15px 0 0;
         }
-        #description-longchamp2
+        #description-longchamp
         {
-            font-size: 75%;
-            font-weight: normal;
             padding-top: 10px;
-            padding-left: 10px;
+            padding-bottom: 20px;
         }
-        #description-longchamp2 a:hover
-        {
-            color: #0065FC;
-        }
+        
         /* footer */
         footer  
         {
             display:flex;
             flex-direction: column;
             position: relative;
-            width: 70%;
-            top: 890px; 
+            width: 75%;
+            top: 900px; 
             padding-left: 30px; 
-            margin-left: 15px;  
+            margin-left: 55px;  
         }
         
         
