@@ -933,8 +933,34 @@ footer a:hover
       /* header */
     .filtres-recherche
     {
-        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
+    .filtre
+    {
+        margin-bottom: 20px;
+    }
+    .bloc-familial
+        {
+            padding-left: 175px;
+            position: relative;
+            bottom: 45px;
+            left: 25px;
+        }
+        .bloc-romantique
+        {
+            position: relative;
+            bottom: 30px;
+            left: 200px;
+        }
+        .bloc-animaux
+        {
+            position: relative;
+            bottom: 70px;
+            width: 180px;
+        }
+    
     .bouton-rechercher
         {
             display: none;
@@ -949,11 +975,18 @@ footer a:hover
         cursor: pointer;
         display: block;
     }
+
     /* section */
+    section 
+    {
+        position: relative;
+        bottom: 100px;
+    }
     .icons-information
     {
         width: 2%;
     }
+    
     .bloc1 /* bloc hébergement */
     {
         width: 100%;  
@@ -985,9 +1018,15 @@ footer a:hover
     {
         width: 35%;
     }
+    .icons-le-soleil
+    {
+        position: relative;
+        bottom: 7px;
+    }
     #bloc-activites 
     {
         margin-top: 100px;
+        margin-right: 10px;
     }
     #activites
     {
@@ -1037,7 +1076,7 @@ footer a:hover
             width: 100%;
             height: 400px;
             margin-top: 30px; 
-            margin-left: 245px;
+            margin-left: 240px;
     }
     #bordure-frioul img 
     {
@@ -1054,7 +1093,7 @@ footer a:hover
             width: 100%;
             height: 400px;
             margin-top: 30px; 
-            margin-left: 200px;
+            margin-left: 195px;
     }
     #bordure-calanques img
     {
@@ -1071,7 +1110,7 @@ footer a:hover
             width: 100%;
             height: 400px;
             margin-top: 30px; 
-            margin-left: 160px;
+            margin-left: 155px;
     }
     #bordure-notre-dame img
     {
@@ -1087,7 +1126,7 @@ footer a:hover
     {
             width: 100%;
             height: 400px;
-            margin-left: 435px;
+            margin-left: 430px;
             margin-top: 30px; 
     }
     #bordure-longchamp img 
@@ -1105,10 +1144,9 @@ footer a:hover
     footer
     {
         position: relative;
-        top: 1200px; 
-        padding-left: 30px; 
-        width: 96%;
-        margin-left: 7px;
+        top: 1200px;
+        right: 15px;
+        padding-left: 30px;
     }
     
 
@@ -1139,11 +1177,9 @@ footer a:hover
             display: flex;
             justify-content:space-around;
             position: relative;
-            right: 30px;
+            left: 30px;
             margin-top: 20px;
-            margin-left: 120px;
-            padding-left: 50px;
-            padding-right: 30px;
+            
         }
          nav a:hover
         {
@@ -1156,7 +1192,10 @@ footer a:hover
             bottom: 42px;
             right: 25px;
         }
-        
+        .nav-hebergements
+        {
+            margin-right: 30px;
+        }
         #title_principal
         {
             margin-right: 75px;
@@ -1276,11 +1315,6 @@ footer a:hover
             width: 75%;
             margin-left: 55px;
         }
-        .icons-star-chambre-mobile
-        {
-            position:relative;
-            bottom: 10px;
-        }
         /* Section Activités */
         
         #bloc-activites
@@ -1299,7 +1333,7 @@ footer a:hover
         }
         #bordure-vieux-port
         {
-            width: 90%;
+            width: 87%;
             height: 200px;
             margin-left: 25px;
         }
@@ -1315,7 +1349,7 @@ footer a:hover
         }
         #bordure-pomegues
         {
-            width: 90%;
+            width: 87%;
             height: 300px;
             margin-top: 30px;
             position: relative;
@@ -1333,10 +1367,10 @@ footer a:hover
         }
         #bordure-frioul
         {
-            width: 90%;
+            width: 87%;
             height: 300px;
             margin-top: 30px; 
-            margin-left: 245px;
+            margin-left: 243px;
         }
         #bordure-frioul img 
         {
@@ -1350,10 +1384,10 @@ footer a:hover
         }
         #bordure-calanques
         {
-            width: 90%;
+            width: 87%;
             height: 300px;
             margin-top: 30px; 
-            margin-left: 200px;
+            margin-left: 195px;
         }
         #bordure-calanques img
         {
@@ -1367,10 +1401,10 @@ footer a:hover
         }
         #bordure-notre-dame
         {
-            width: 90%;
+            width: 87%;
             height: 300px;
             margin-top: 30px; 
-            margin-left: 160px;
+            margin-left: 155px;
         }
         #bordure-notre-dame img
         {
@@ -1384,9 +1418,9 @@ footer a:hover
         }
         #bordure-longchamp
         {
-            width: 90%;
+            width: 87%;
             height: 300px;
-            margin-left: 432px;
+            margin-left: 428px;
             margin-top: 30px; 
         }
         #bordure-longchamp img 
