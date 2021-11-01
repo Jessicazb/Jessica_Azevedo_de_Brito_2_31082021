@@ -1,4 +1,5 @@
 *{
+    max-width: 100%;
     padding: 0;
     margin: 0;
 }
@@ -666,7 +667,7 @@ aside
 #bloc-activites
 {
     border: none;
-    width: 95%;
+    width: 100%;
     height: 520px;
     margin-top: 50px;
     position: relative;
@@ -684,8 +685,14 @@ aside
     display: flex;
     margin: auto;
     margin-top: 30px;
-    border: none;
-    clear: left;
+    border: none;   
+}
+#activites2
+{
+  display: flex;
+  position: relative;
+  left: 400px;
+  bottom: 200px;
 }
 #bordure-vieux-port
 {
@@ -777,7 +784,8 @@ aside
     border: none;
     border-radius: 15px;
     position: relative;
-    right: 170px;
+    bottom: 260px;
+    left: 235px;
     box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
 }
 #bordure-calanques img
@@ -805,7 +813,8 @@ aside
     border: none;
     border-radius: 15px;
     position: relative;
-    right: 130px;
+    bottom: 255px;
+    left: 280px;
     box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
 }
 #bordure-notre-dame img
@@ -832,9 +841,9 @@ aside
     height: 190px;
     border: none;
     border-radius: 15px;
-    margin-top: 215px;
     position: relative;
-    right: 400px;
+    bottom: 35px;
+    left: 10px;
     box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
 }
 #bordure-longchamp img
@@ -991,6 +1000,10 @@ footer a:hover
     {
         width: 100%;  
     }
+    .bordure-images1
+    {
+        margin-right: 30px;
+    }
     aside 
     {
         
@@ -1030,8 +1043,19 @@ footer a:hover
     }
     #activites
     {
+        width: 97%;
         display: flex;
         flex-direction: column;
+    }
+    #activites2
+    {
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+        height: 460px;
+        position: relative;
+        left: 10px;
+        top: 370px;
     }
     .title-activites
     {
@@ -1041,7 +1065,7 @@ footer a:hover
     {
             width: 100%;
             height: 400px;
-            margin-left: 25px;
+            margin-left: 5px;
     }
     #bordure-vieux-port img 
     {
@@ -1059,7 +1083,7 @@ footer a:hover
             height: 400px;
             margin-top: 30px;
             position: relative;
-            left: 25px;
+            left: 5px;
     }
     #bordure-pomegues img 
     {
@@ -1076,7 +1100,7 @@ footer a:hover
             width: 100%;
             height: 400px;
             margin-top: 30px; 
-            margin-left: 240px;
+            margin-left: 222px;
     }
     #bordure-frioul img 
     {
@@ -1092,8 +1116,10 @@ footer a:hover
     {
             width: 100%;
             height: 400px;
-            margin-top: 30px; 
-            margin-left: 195px;
+            position: relative;
+            top: 5px;
+            left:7px;
+            
     }
     #bordure-calanques img
     {
@@ -1109,8 +1135,9 @@ footer a:hover
     {
             width: 100%;
             height: 400px;
-            margin-top: 30px; 
-            margin-left: 155px;
+            position: relative;
+            left: 8px;
+            top: 40px;       
     }
     #bordure-notre-dame img
     {
@@ -1126,8 +1153,8 @@ footer a:hover
     {
             width: 100%;
             height: 400px;
-            margin-left: 430px;
-            margin-top: 30px; 
+            position: relative;
+            top: 70px;              
     }
     #bordure-longchamp img 
     {
@@ -1192,13 +1219,14 @@ footer a:hover
             bottom: 42px;
             right: 25px;
         }
-        .nav-hebergements
+        .nav-activites
         {
-            margin-right: 30px;
+            position: relative;
+            left: 20px;
         }
         #title_principal
         {
-            margin-right: 75px;
+            margin-right: 40px;
             margin-left: 60px;
         }
         .description_title 
@@ -1212,12 +1240,12 @@ footer a:hover
         .information
         {
             margin-left: 40px;
-            margin-right: 100px;
+            margin-right: 60px;
         }
         .icons-information
         {
-            width: 3%;
-            padding-right: 3px;
+            width: 2%;
+            padding-right: 10px;
         }
         .filtre
         {
@@ -1235,10 +1263,10 @@ footer a:hover
         }
         .icons-recherche 
         {
-         width: 7%;
+         width: 8%;
          height: 23px;
          padding-top: 6px;
-         padding-left: 10px;
+         padding-left: 8px;
          margin-left: 1px;
          cursor: pointer;
          display: block;
@@ -1273,7 +1301,7 @@ footer a:hover
             position: relative;
             top: 600px;
             left: 20px;
-            width: 80%;
+            width: 90%;
             background-color: white;
         }
         .ligne
@@ -1282,12 +1310,11 @@ footer a:hover
         }
         .title-hebergement
         {
-            margin-left: 10px;
+            margin-left: 5px;
         }
         .bordure-images1
         {
             width: 100%;
-            margin-left: 25px;
         }
         .images-hebergement
         {
@@ -1300,20 +1327,19 @@ footer a:hover
         /* Aside/ Les plus populaires */
         aside 
         {
-            position: relative;
+           margin-left: 25px;
             width: 100%;
-            right: 5px;
             bottom: 590px;
         }
         .title-populaire
         {
-            margin-left: 60px;
+            margin-left: 30px;
             margin-bottom: 3px;
         }
         .bordure-images2
         {
             width: 75%;
-            margin-left: 55px;
+            margin-left: 40px;
         }
         /* Section Activités */
         
@@ -1323,125 +1349,144 @@ footer a:hover
         }
         .title-activites
         {
-            margin-left: 45px;
+           position: relative;
+           left: 20px;
         }
         #activites
         {
+            width: 97%;
             display: flex;
             flex-direction: column;
-            margin-left: 20px;
+            position: relative;
+            left: 30px;
+        }
+        #activites2
+        {
+            width: 97%;
+            display: flex;
+            flex-direction: column;
+            height: 460px;
+            position: relative;
+            left: 35px;
+            top: 220px;
+        }
+        .title-activites
+        {
+            margin-left: 25px;
         }
         #bordure-vieux-port
         {
-            width: 87%;
-            height: 200px;
-            margin-left: 25px;
+                width: 95%;
+                height: 300px;
+                margin-left: 3px;
         }
         #bordure-vieux-port img 
         {
-            height: 150px;
-            width: 100%;
+                height: 150px;
+                width: 100%;
         }
         #description-vieux-port
         {
-            padding-top: 10px;
-            padding-bottom: 20px;
+                padding-top: 10px;
+                padding-bottom: 20px;
         }
         #bordure-pomegues
         {
-            width: 87%;
-            height: 300px;
-            margin-top: 30px;
-            position: relative;
-            left: 25px;
+                width: 95%;
+                height: 300px;
+                margin-top: 30px;
+                position: relative;
+                left: 3px;
         }
         #bordure-pomegues img 
         {
-            height: 150px;
-            width: 100%;
+                height: 150px;
+                width: 100%;
         }
         #description-pomegues
         {
-            padding-top: 10px;
-            padding-bottom: 20px;
+                padding-top: 10px;
+                padding-bottom: 20px;
         }
         #bordure-frioul
         {
-            width: 87%;
-            height: 300px;
-            margin-top: 30px; 
-            margin-left: 243px;
+                width: 95%;
+                height: 300px;
+                margin-top: 30px; 
+                margin-left: 222px;
         }
         #bordure-frioul img 
         {
-            height: 150px;
-            width: 100%;
+                height: 150px;
+                width: 100%;
         }
         #description-frioul
         {
-            padding-top: 10px;
-            padding-bottom: 20px;
+                padding-top: 10px;
+                padding-bottom: 20px;
         }
         #bordure-calanques
         {
-            width: 87%;
-            height: 300px;
-            margin-top: 30px; 
-            margin-left: 195px;
+                width: 95%;
+                height: 300px;
+                position: relative;
+                top: 5px;
+                left:7px;       
         }
         #bordure-calanques img
         {
-            height: 150px;
-            width: 100%;
+                height: 150px;
+                width: 100%;
         }
         #description-calanques
         {
-            padding-top: 10px;
-            padding-bottom: 20px;
+                padding-top: 10px;
+                padding-bottom: 20px;
         }
         #bordure-notre-dame
         {
-            width: 87%;
-            height: 300px;
-            margin-top: 30px; 
-            margin-left: 155px;
+                width: 95%;
+                height: 300px;
+                position: relative;
+                left: 8px;
+                top: 40px;       
         }
         #bordure-notre-dame img
         {
-            height: 150px;
-            width: 100%;
+                height: 150px;
+                width: 100%;
         }
         #description-notre-dame
         {
-            padding-top: 10px;
-            padding-bottom: 20px;
+                padding-top: 10px;
+                padding-bottom: 20px;
         }
         #bordure-longchamp
         {
-            width: 87%;
-            height: 300px;
-            margin-left: 428px;
-            margin-top: 30px; 
+                width: 95%;
+                height: 300px;
+                position: relative;
+                top: 70px;              
         }
         #bordure-longchamp img 
         {
-            height: 150px;
-            width: 100%;
+                height: 150px;
+                width: 100%;
         }
         #description-longchamp
         {
-            padding-top: 10px;
-            padding-bottom: 20px;
+                padding-top: 10px;
+                padding-bottom: 20px;
         }
-        
+            
         /* footer */
         footer  
         {
             display:flex;
             flex-direction: column;
             position: relative;
-            width: 90%;
-            top: 880px; 
+            width: 100%;
+            top: 870px; 
             left: 15px;
             padding-left: 30px;   
         }
