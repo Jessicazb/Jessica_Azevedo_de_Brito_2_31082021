@@ -728,7 +728,7 @@ aside
     border: none;
     border-radius: 15px;
     position: relative;
-    left: 50px;
+    left: 55px;
     box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
 }
 #bordure-pomegues img
@@ -757,7 +757,7 @@ aside
     border-radius: 15px;
     margin-top: 260px;
     position: relative;
-    right: 217px;
+    right: 215px;
     box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
 }
 #bordure-frioul img
@@ -786,7 +786,7 @@ aside
     border-radius: 15px;
     position: relative;
     bottom: 260px;
-    left: 235px;
+    left: 250px;
     box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
 }
 #bordure-calanques img
