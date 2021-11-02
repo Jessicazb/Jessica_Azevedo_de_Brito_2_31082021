@@ -667,7 +667,7 @@ aside
 #bloc-activites
 {
     border: none;
-    width: 100%;
+    width: 90%;
     height: 520px;
     margin-top: 50px;
     position: relative;
@@ -680,7 +680,7 @@ aside
 }
 #activites
 {
-    width: 100%;
+    width: auto;
     height: 460px;
     display: flex;
     margin: auto;
@@ -688,7 +688,8 @@ aside
     border: none;   
 }
 #activites2
-{
+{ 
+  width: 70%;
   display: flex;
   position: relative;
   left: 400px;
@@ -814,7 +815,7 @@ aside
     border-radius: 15px;
     position: relative;
     bottom: 255px;
-    left: 280px;
+    left: 300px;
     box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
 }
 #bordure-notre-dame img
@@ -843,7 +844,7 @@ aside
     border-radius: 15px;
     position: relative;
     bottom: 35px;
-    left: 10px;
+    left: 45px;
     box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
 }
 #bordure-longchamp img
@@ -1038,23 +1039,24 @@ footer a:hover
     }
     #bloc-activites 
     {
+        width: 100%;
         margin-top: 100px;
         margin-right: 10px;
     }
     #activites
     {
-        width: 97%;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
     #activites2
     {
-        width: 97%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         height: 460px;
         position: relative;
-        left: 10px;
+        left: 0px;
         top: 370px;
     }
     .title-activites
@@ -1154,6 +1156,7 @@ footer a:hover
             width: 100%;
             height: 400px;
             position: relative;
+            left: 10px;
             top: 70px;              
     }
     #bordure-longchamp img 
@@ -1345,16 +1348,18 @@ footer a:hover
         
         #bloc-activites
         {
+            width: 97%;
             margin-top: 900px;
+            margin-left: 10px;
         }
         .title-activites
         {
            position: relative;
-           left: 20px;
+           left: 15px;
         }
         #activites
         {
-            width: 97%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -1362,12 +1367,12 @@ footer a:hover
         }
         #activites2
         {
-            width: 97%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             height: 460px;
             position: relative;
-            left: 35px;
+            left: 27px;
             top: 220px;
         }
         .title-activites
@@ -1466,6 +1471,7 @@ footer a:hover
                 width: 95%;
                 height: 300px;
                 position: relative;
+                left: 10px;
                 top: 70px;              
         }
         #bordure-longchamp img 
