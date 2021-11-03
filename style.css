@@ -1200,14 +1200,14 @@ footer a:hover
         {
             width: 170%;
             padding-bottom: 30px;
-            margin-left: 58px;
+            margin-left: 53px;
         }
          nav 
         {
             display: flex;
             justify-content:space-around;
             position: relative;
-            left: 30px;
+            left: 40px;
             margin-top: 20px;
             
         }
@@ -1225,20 +1225,20 @@ footer a:hover
         .nav-activites
         {
             position: relative;
-            left: 20px;
+            left: 35px;
         }
         #title_principal
         {
-            margin-right: 40px;
-            margin-left: 60px;
+            margin-right: 20px;
+            margin-left: 50px;
         }
         .description_title 
         {
-            margin-left: 60px;
+            margin-left: 50px;
         }
         .recherche
         {
-            margin-left: 80px;
+            margin-left: 70px;
         }
         .information
         {
@@ -1278,13 +1278,14 @@ footer a:hover
         {
             display: flex;
             flex-direction: column;
-            margin-left: 60px;
+            margin-left: 50px;
             width: 100%;    
         }
         .bloc-familial
         {
             padding-left: 175px;
             position: relative;
+            right: 10px;
             bottom: 45px;
         }
         .bloc-romantique
@@ -1303,7 +1304,6 @@ footer a:hover
         {
             position: relative;
             top: 600px;
-            left: 20px;
             width: 90%;
             background-color: white;
         }
@@ -1330,8 +1330,8 @@ footer a:hover
         /* Aside/ Les plus populaires */
         aside 
         {
-           margin-left: 25px;
-            width: 100%;
+          
+            width: 97%;
             bottom: 590px;
         }
         .title-populaire
@@ -1348,9 +1348,8 @@ footer a:hover
         
         #bloc-activites
         {
-            width: 97%;
-            margin-top: 900px;
-            margin-left: 10px;
+            
+            margin-top: 900px;  
         }
         .title-activites
         {
@@ -1491,7 +1490,7 @@ footer a:hover
             display:flex;
             flex-direction: column;
             position: relative;
-            width: 100%;
+            width: 90%;
             top: 870px; 
             left: 15px;
             padding-left: 30px;   
